@@ -1,10 +1,11 @@
 function splitAndMerge(str, sp){
-	 var stringIntoArray= str.split(" ");
-var map = stringIntoArray.map(elem => elem.split("").join(sp)).join(" ");
-console.log(map);
+	var stringIntoArray= str.split(" ");
+return stringIntoArray.map(function(elem){
+return elem.split("").join(sp);
+}).join(" ");
 }
-splitAndMerge("My name is John"," ");
-splitAndMerge("Hello World!",",");
+console.log(splitAndMerge("My name is John"," "));
+console.log(splitAndMerge("Hello World!",","));
 
 /*result:
 M y n a m e i s J o h n
